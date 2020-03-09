@@ -1,0 +1,219 @@
+#include <iostream>
+#include <algorithm>
+#include <iomanip>
+#include <fstream>
+#include <string>
+#include <Windows.h>
+#include <MMSystem.h>
+//#include <string.h>
+
+using namespace std;
+
+int main()
+{
+
+
+using namespace std;
+
+
+cout <<setfill('-')<< setw(30) << ""  << Text To Speech Software"  << setfill('-') << setw(20) << "" << "" << endl;
+
+   string line;
+    ifstream myfile ("input.txt");
+    ofstream myfile1 ("output.txt");
+
+    if (myfile.is_open())
+
+        {
+            myfile1.open("output.txt");
+
+            while (getline(myfile, line) )
+            {
+
+                replace( line.begin(), line.end(), ' ', '~' );
+                myfile1 << myfile;
+
+for(string::size_type i = 0; i < line.size(); ++i) {
+
+if ( line[i]== ' ' )
+{
+printf (" ");
+}
+if ( line[i]== '?' )
+{
+printf ("?");
+}
+if ( line[i]== ',' )
+{
+printf (",");
+}
+if ( line[i]== '.' )
+{
+printf (".");
+}
+
+if ( line[i]== 'a' )
+{
+   PlaySound(TEXT("a.wav"), NULL, SND_FILENAME);
+printf ("a");
+}
+
+if (line[i]== 'b')
+{
+    PlaySound(TEXT("b.wav"), NULL, SND_FILENAME);
+printf ("b");
+}
+
+if (line[i]== 'c')
+{
+    PlaySound(TEXT("c.wav"), NULL, SND_FILENAME);
+printf ("c");
+}
+
+if (line[i]== 'd')
+{
+   PlaySound(TEXT("d.wav"), NULL, SND_FILENAME);
+printf ("d");
+}
+
+if (line[i]== 'e')
+{
+    PlaySound(TEXT("e.wav"), NULL, SND_FILENAME);
+printf ("e");
+}
+
+if (line[i]== 'f')
+{
+    PlaySound(TEXT("f.wav"), NULL, SND_FILENAME);
+printf ("f");
+}
+
+if (line[i]== 'g')
+{
+    PlaySound(TEXT("g.wav"), NULL, SND_FILENAME);
+printf ("g");
+}
+
+if (line[i]== 'h')
+{
+  PlaySound(TEXT("h.wav"), NULL, SND_FILENAME);
+printf ("h");
+}
+
+if (line[i]== 'i')
+{
+PlaySound(TEXT("i.wav"), NULL, SND_FILENAME);
+printf ("i");
+}
+
+if (line[i]== 'j')
+{
+  PlaySound(TEXT("j.wav"), NULL, SND_FILENAME);
+printf ("j");
+}
+
+if (line[i]== 'k')
+{
+    PlaySound(TEXT("k.wav"), NULL, SND_FILENAME);
+printf ("k");
+}
+
+if (line[i]== 'l')
+{
+    PlaySound(TEXT("l.wav"), NULL, SND_FILENAME);
+printf ("l");
+}
+
+if (line[i]== 'm')
+{
+    PlaySound(TEXT("m.wav"), NULL, SND_FILENAME);
+printf ("m");
+}
+
+if (line[i]== 'n')
+{
+    PlaySound(TEXT("n.wav"), NULL, SND_FILENAME);
+printf ("n");
+}
+
+if (line[i]== 'o')
+{
+    PlaySound(TEXT("o.wav"), NULL, SND_FILENAME);
+printf ("o");
+}
+
+if (line[i]== 'p')
+{
+  PlaySound(TEXT("p.wav"), NULL, SND_FILENAME);
+printf ("p");
+}
+
+if (line[i]== 'q')
+{
+    PlaySound(TEXT("q.wav"), NULL, SND_FILENAME);
+printf ("q");
+}
+
+if (line[i]== 'r')
+{
+    PlaySound(TEXT("r.wav"), NULL, SND_FILENAME);
+printf ("r");
+}
+
+if (line[i]== 's')
+{
+   PlaySound(TEXT("s.wav"), NULL, SND_FILENAME);
+printf ("s");
+}
+
+if (line[i]== 't')
+{
+   PlaySound(TEXT("t.wav"), NULL, SND_FILENAME);
+printf ("t");
+}
+
+if (line[i]== 'u')
+{
+   PlaySound(TEXT("u.wav"), NULL, SND_FILENAME);
+printf ("u");
+}
+
+if (line[i]== 'v')
+{
+   PlaySound(TEXT("v.wav"), NULL, SND_FILENAME);
+printf ("v");
+}
+
+if (line[i]== 'w')
+{
+  PlaySound(TEXT("w.wav"), NULL, SND_FILENAME);
+printf ("w");
+}
+
+if (line[i]== 'x')
+{
+    PlaySound(TEXT("x.wav"), NULL, SND_FILENAME);
+printf ("x");
+}
+
+if (line[i]== 'y')
+{
+    PlaySound(TEXT("y.wav"), NULL, SND_FILENAME);
+printf ("y");
+}
+
+if (line[i]== 'z')
+{
+   PlaySound(TEXT("z.wav"), NULL, SND_FILENAME);
+printf ("z");
+}
+}
+            }
+
+
+        }
+                    else cout << "Unable to open file";
+                    myfile.close();
+                    myfile1.close();
+return 0;
+}
